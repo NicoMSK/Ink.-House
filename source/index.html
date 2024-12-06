@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>House</title>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/favicon-32x32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="header" data-test="header">
+    <div class="header__container container">
+      <nav class="header__nav nav">
+        <div class="nav__logo-box">
+          <a class="nav__logo-link logo" href="#">
+            <img class="logo__svg" src="#" width="35" height="35" alt="Логотип звезда">
+            <p class="logo__text">Ink. House</p>
+          </a>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#">Репродукции</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">Новинки</a>
+          </li>
+          <li class="nav__item">
+            <a href="#">О нас</a>
+          </li>
+          <li class="nav__item">
+            <button class="nav__btn button" type="button">
+              <img src="#">
+              <span class="visually-hidden">Открыть корзину</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page__main">
+    <section class="hero" data-test="hero">
+      <div class="hero__container container">
+        <picture class="hero__img-box">
+          <source media="(min-width: 576px)" width="195" height="239" type="image/webp" srcset="#">
+          <!-- <source media="(min-width: 768px)" width="709" height="609" type="image/webp"
+              srcset="images/index-hero-tablet@1x.webp 1x, images/index-hero-tablet@2x.webp 2x"> -->
+          <source media="(min-width: 768px)" width="330" height="380" type="image/webp" srcset="#">
+          <img class="hero__image" src="#" srcset="#" width="540" height="621" loading="lazy"
+            alt="Голубь сидит на ветке дерева">
+        </picture>
+        <div class="hero__wrapper">
+          <h1 class="hero__title">Реплики картин от&nbsp;
+            <span class="hero__title-color">Ink. House</span>
+          </h1>
+          <p class="hero__description">Высокое качество отрисовки на&nbsp;плотной бумаге или льняном холсте. Редкие
+            произведения, доступные цены.</p>
+          <a class="hero__link" href="#">Продукция</a>
+        </div>
+      </div>
+    </section>
+    <section class="catalog">
+      <div class="catalog__container container">
+        <div class="catalog__box">
+          <h2 class="catolog__title">Репродукции</h2>
+          <ul class="catolog__list-filter">
+            <li class="catalog__item-filter catalog__item-filter--current">
+              <a class="catalog__link-filter" href="#">Франция</a>
+            </li>
+            <li class="catalog__item-filter">
+              <a class="catalog__link-filter" href="#">Германия</а>
+            </li>
+            <li class="catalog__item-filter">
+              <a class="catalog__link-filter" href="#">Англия</а>
+            </li>
+          </ul>
+        </div>
+        <div class="catalog__cards-box">
+          <ul class="catalog__list-card card">
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Охота Амура">
+                  </picture>
+                  <figcaption class="card__img-caption">Марсель Руссо</figcaption>
+                </figure>
+                <h3 class="card__title">Охота Амура</h3>
+                <p class="card__description">Холст, масло (50х80)</p>
+              </a>
+              <p class="card__price">14 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Дама с собачкой">
+                  </picture>
+                  <figcaption class="card__img-caption">Анри Селин</figcaption>
+                </figure>
+                <h3 class="card__title">Дама с собачкой</h3>
+                <p class="card__description">Акрил, бумага (50х80)</p>
+              </a>
+              <p class="card__price">16 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Процедура">
+                  </picture>
+                  <figcaption class="card__img-caption">Франсуа Дюпон</figcaption>
+                </figure>
+                <h3 class="card__title">Процедура</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">20 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Роза">
+                  </picture>
+                  <figcaption class="card__img-caption">Луи Детуш</figcaption>
+                </figure>
+                <h3 class="card__title">Роза</h3>
+                <p class="card__description">Бумага, акрил (50х80)</p>
+              </a>
+              <p class="card__price">12 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Птичья трапеза">
+                  </picture>
+                  <figcaption class="card__img-caption">Франсуа Дюпон</figcaption>
+                </figure>
+                <h3 class="card__title">Птичья трапеза</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">22 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Пейзаж с рыбой">
+                  </picture>
+                  <figcaption class="card__img-caption">Пьер Моранж</figcaption>
+                </figure>
+                <h3 class="card__title">Пейзаж с рыбой</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">20 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+          </ul>
+          <ul class="catalog__list-card card">
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Над городом">
+                  </picture>
+                  <figcaption class="card__img-caption">Курт Вернер</figcaption>
+                </figure>
+                <h3 class="card__title">Над городом</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">16 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Птенцы">
+                  </picture>
+                  <figcaption class="card__img-caption">Макс Рихтер</figcaption>
+                </figure>
+                <h3 class="card__title">Птенцы</h3>
+                <p class="card__description">Холст, масло (50х80)</p>
+              </a>
+              <p class="card__price">14 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Среди листьев">
+                  </picture>
+                  <figcaption class="card__img-caption">Мартин Майер</figcaption>
+                </figure>
+                <h3 class="card__title">Среди листьев</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">20 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Яркая птица">
+                  </picture>
+                  <figcaption class="card__img-caption">Герман Беккер</figcaption>
+                </figure>
+                <h3 class="card__title">Яркая птица</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">13 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Дятлы">
+                  </picture>
+                  <figcaption class="card__img-caption">Вульф Бауэр</figcaption>
+                </figure>
+                <h3 class="card__title">Дятлы</h3>
+                <p class="card__description">Бумага, акрил (50х80)</p>
+              </a>
+              <p class="card__price">20 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Большие воды">
+                  </picture>
+                  <figcaption class="card__img-caption">Вальтер Хартманн</figcaption>
+                </figure>
+                <h3 class="card__title">Большие воды</h3>
+                <p class="card__description">Бумага, акрил (50х80)</p>
+              </a>
+              <p class="card__price">23 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+          </ul>
+          <ul class="catalog__list-card card">
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Дикий зверь">
+                  </picture>
+                  <figcaption class="card__img-caption">Пол Смит</figcaption>
+                </figure>
+                <h3 class="card__title">Дикий зверь</h3>
+                <p class="card__description">Акварель, бумага (50х80)</p>
+              </a>
+              <p class="card__price">19 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Скалистый берег">
+                  </picture>
+                  <figcaption class="card__img-caption">Джон Уайт</figcaption>
+                </figure>
+                <h3 class="card__title">Скалистый берег</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">17 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Река и горы">
+                  </picture>
+                  <figcaption class="card__img-caption">Джим Уотсон</figcaption>
+                </figure>
+                <h3 class="card__title">Река и горы</h3>
+                <p class="card__description">Акварель, бумага (50х80)</p>
+              </a>
+              <p class="card__price">20 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Белый попугай">
+                  </picture>
+                  <figcaption class="card__img-caption">Юджин Зиллион</figcaption>
+                </figure>
+                <h3 class="card__title">Белый попугай</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">15 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Ночная рыба">
+                  </picture>
+                  <figcaption class="card__img-caption">Эрик Гиллман</figcaption>
+                </figure>
+                <h3 class="card__title">Ночная рыба</h3>
+                <p class="card__description">Бумага, акрил (50х80)</p>
+              </a>
+              <p class="card__price">12 500 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+            <li class="card__item">
+              <a class="card__link" href="#">
+                <figure class="card__img-box">
+                  <picture>
+                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Рыжий кот">
+                  </picture>
+                  <figcaption class="card__img-caption">Альфред Барр</figcaption>
+                </figure>
+                <h3 class="card__title">Рыжий кот</h3>
+                <p class="card__description">Цветная литография (40х60)</p>
+              </a>
+              <p class="card__price">21 000 руб</p>
+              <a class="card__button button-link" href="#">В корзину</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="promo">
+      <div class="promo__container container">
+        <h2 class="promo__title">Новая коллекция французских авторов</h2>
+        <p class="promo__discription">Сложно сказать, почему акционеры крупнейших компаний призывают нас к&nbsp;новым
+          свершениям, которые, в&nbsp;свою очередь, должны быть заблокированы в&nbsp;рамках своих собственных
+          рациональных ограничений.
+          Принимая во&nbsp;внимание показатели успешности, граница обучения кадров предопределяет высокую
+          востребованность направлений прогрессивного развития.
+        </p>
+        <a class="promo__link" href="#">Ознакомиться</a>
+      </div>
+    </section>
+    <section class="team">
+      <div class="team__container container">
+        <h2 class="team__title">Наша команда</h2>
+        <picture class="team__picture">
+          <source media="(min-width: 320px)" width="290" height="286" type="image/webp" srcset="#">
+          <source media="(min-width: 576px)" width="375" height="370" type="image/webp" srcset="#">
+          <source media="(min-width: 768px)" width="510" height="504" type="image/webp" srcset="#">
+          <img class="team__img" src="#" width="445" height="440" loading="lazy"
+            alt="Человеческая рука с кистями для рисования в рамке для картины">
+        </picture>
+        <p class="team__description">Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет
+          оценить значение экспериментов, поражающих по&nbsp;своей масштабности и&nbsp;грандиозности. Мы&nbsp;вынуждены
+          отталкиваться от&nbsp;того, что консультация с&nbsp;широким активом.
+        </p>
+        <div class="team__avatar-box">
+          <img class="team__avatar" src="#" width="80" height="80">
+          <img class="team__avatar" src="#" width="80" height="80">
+          <img class="team__avatar" src="#" width="80" height="80">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__logo-box">
+        <a class="footer__logo-link logo" href="#">
+          <img class="logo__svg" src="#" width="35" height="35" alt="Логотип звезда">
+          <p class="logo__text">Ink. House</p>
+        </a>
+      </div>
+      <div class="footer__phone-box">
+        <a class="footer__phone-link" href="tel:+79995435454">+7 (999) 543-54-54</a>
+        <p class="footer__phone-text">Мастерская</p>
+      </div>
+      <div class="footer__nav-box">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item footer__nav-item--accent">
+            <a class="footer__nav-link" href="#">Репродукции</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Франция</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Германия</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Англия</a>
+          </li>
+        </ul>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item footer__nav-item--accent">
+            <a class="footer__nav-link" href="#">Новинки</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">2021</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">2020</a>
+          </li>
+        </ul>
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item footer__nav-item--accent">
+            <a class="footer__nav-link" href="#">О нас</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Художники</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-link" href="#">Менеджеры</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#">
+            <span class="visually-hidden">Мы в facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <span class="visually-hidden">Мы в instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Мы в youtube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Ink. House ®</p>
+        <p class="footer__copyright-text footer__copyright-text--second">All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

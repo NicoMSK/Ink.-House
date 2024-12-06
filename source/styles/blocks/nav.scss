@@ -1,0 +1,15 @@
+.nav {}
+
+
+.nav__list {
+  @include list-reset;
+
+}
+
+.nav__item {}
+
+.nav__link {
+  @include link-basic;
+
+
+}
