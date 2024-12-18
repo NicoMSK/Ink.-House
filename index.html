@@ -5,11 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>House</title>
-  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="#" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="#" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="favicons/favicon-32x32.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple-touch-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/styles.css">
@@ -50,10 +50,10 @@
     <section class="hero" data-test="hero">
       <div class="hero__container container">
         <picture class="hero__img-box">
-          <source media="(min-width: 576px)" width="195" height="239" type="image/webp" srcset="#">
+          <source media="(max-width: 576px)" width="195" height="239" type="image/webp" srcset="#">
           <!-- <source media="(min-width: 768px)" width="709" height="609" type="image/webp"
               srcset="images/index-hero-tablet@1x.webp 1x, images/index-hero-tablet@2x.webp 2x"> -->
-          <source media="(min-width: 768px)" width="330" height="380" type="image/webp" srcset="#">
+          <source media="(max-width: 768px)" width="330" height="380" type="image/webp" srcset="#">
           <img class="hero__image" src="#" srcset="#" width="540" height="621" loading="lazy"
             alt="Голубь сидит на ветке дерева">
         </picture>
@@ -297,10 +297,12 @@
               <a class="card__link" href="#">
                 <figure class="card__img-box">
                   <picture>
-                    <source media="(min-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
-                    <source media="(min-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
-                    <source media="(min-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
-                    <img class="card__img" src="#" width="310" height="422" loading="lazy" alt="Дикий зверь">
+                    <source media="(max-width: 320px)" width="250" height="250" type="image/webp" srcset="#">
+                    <source media="(max-width: 576px)" width="200" height="250" type="image/webp" srcset="#">
+                    <source media="(max-width: 768px)" width="290" height="422" type="image/webp" srcset="#">
+                    <img class="card__img" src="images/desktop/england/moose.jpg"
+                      srcset="images/desktop/england/moose@2x.jpg" width="310" height="422" loading="lazy"
+                      alt="Дикий зверь">
                   </picture>
                   <figcaption class="card__img-caption">Пол Смит</figcaption>
                 </figure>
@@ -408,7 +410,7 @@
           Принимая во&nbsp;внимание показатели успешности, граница обучения кадров предопределяет высокую
           востребованность направлений прогрессивного развития.
         </p>
-        <a class="promo__link" href="#">Ознакомиться</a>
+        <a class="promo__link button-link" href="#">Ознакомиться</a>
       </div>
     </section>
     <section class="team">
