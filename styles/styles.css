@@ -1,16 +1,16 @@
-/* GLOBAL */
+/* COMMON */
 @font-face {
-  font-family: "Lato";
-  font-weight: 400;
+  font-family: "Raleway";
+  font-weight: 500;
   font-style: normal;
-  src: url("../../fonts/lato/Lato-Regular.woff2") format("woff2");
+  src: url("../../fonts/Raleway-Medium.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
-  font-family: "Oswald";
-  font-weight: 400;
+  font-family: "Raleway-bold";
+  font-weight: 700;
   font-style: normal;
-  src: url("../../fonts/oswald/oswaldregular.woff2") format("woff2");
+  src: url("../../fonts/Raleway-Bold.woff2") format("woff2");
   font-display: swap;
 }
 *,
@@ -22,8 +22,12 @@
 img {
   max-width: 100%;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 ul,
@@ -54,7 +58,7 @@ ol {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
@@ -71,7 +75,7 @@ ol {
   display: inline-grid;
   place-items: center;
   text-align: center;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Raleway-bold", "Arial", sans-serif;
   font-size: 16px;
   background-color: #68b738;
   text-transform: uppercase;
@@ -84,15 +88,9 @@ ol {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.nav__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .nav__link {
   display: block;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Raleway-bold", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
@@ -101,9 +99,6 @@ ol {
 }
 
 .social {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -116,26 +111,25 @@ ol {
 }
 
 .social__link--vk::before {
-  -webkit-mask-image: url("../../icons/stack.svg#vk-icon");
-          mask-image: url("../../icons/stack.svg#vk-icon");
+  mask-image: url("../../icons/stack.svg#vk-icon");
 }
 
 .social__link--youtube::before {
-  -webkit-mask-image: url("../../icons/stack.svg#youtube-icon");
-          mask-image: url("../../icons/stack.svg#youtube-icon");
+  mask-image: url("../../icons/stack.svg#youtube-icon");
 }
 
 .social__link--telegram::before {
-  -webkit-mask-image: url("../../icons/stack.svg#telegram-icon");
-          mask-image: url("../../icons/stack.svg#telegram-icon");
+  mask-image: url("../../icons/stack.svg#telegram-icon");
 }
 
 .footer__logo-link {
   display: block;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Raleway-bold", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */
