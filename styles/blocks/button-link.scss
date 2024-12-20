@@ -4,17 +4,9 @@
   display: inline-grid;
   place-items: center;
   text-align: center;
-  font-family: $second-font;
+  font-family: $primary-font;
   font-size: 16px;
-  background-color: $button-basic;
+  background-color: $main-bg;
   text-transform: uppercase;
   text-decoration: none;
-
-  &:hover {
-    background-color: $button-status;
-  }
-
-  &:active {
-    color: rgba($main-light, 0.3);
-  }
 }

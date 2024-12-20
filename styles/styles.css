@@ -59,14 +59,38 @@ ol {
   flex-direction: column;
   min-height: 100%;
   font-family: "Raleway", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #000000;
-  background-color: #ffffff;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2c2d35;
+  background-color: #f4f6f5;
 }
 
 .page__main {
   flex-grow: 1;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 165px;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 40px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    width: 576px;
+    padding: 0 33px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    width: 320px;
+    padding: 0 18px;
+  }
 }
 
 .button-link {
@@ -75,17 +99,11 @@ ol {
   display: inline-grid;
   place-items: center;
   text-align: center;
-  font-family: "Raleway-bold", "Arial", sans-serif;
+  font-family: "Raleway", "Arial", sans-serif;
   font-size: 16px;
-  background-color: #68b738;
+  background-color: #f4f6f5;
   text-transform: uppercase;
   text-decoration: none;
-}
-.button-link:hover {
-  background-color: #5eaa2f;
-}
-.button-link:active {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .nav__link {
@@ -93,7 +111,17 @@ ol {
   font-family: "Raleway-bold", "Arial", sans-serif;
   font-size: 20px;
   line-height: 20px;
-  color: #000000;
+  color: #2c2d35;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.footer__logo-link {
+  display: block;
+  font-family: "Raleway-bold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  color: #2c2d35;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -120,16 +148,6 @@ ol {
 
 .social__link--telegram::before {
   mask-image: url("../../icons/stack.svg#telegram-icon");
-}
-
-.footer__logo-link {
-  display: block;
-  font-family: "Raleway-bold", "Arial", sans-serif;
-  font-size: 20px;
-  line-height: 20px;
-  color: #000000;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
