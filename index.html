@@ -17,15 +17,16 @@
 </head>
 
 <body class="page__body">
-  <header class="header" data-test="header">
+  <header class="header">
     <div class="header__container container">
-      <nav class="header__nav nav">
-        <div class="nav__logo-box">
-          <a class="nav__logo-link logo" href="#">
-            <img class="logo__svg" src="./images/logo.svg" width="35" height="35" alt="Логотип звезда">
-            <p class="logo__text">Ink. House</p>
-          </a>
-        </div>
+      <nav class="header__nav nav nav--opened nav--nojs">
+        <a class="nav__logo-link logo" href="#">
+          <img class="logo__svg" src="./images/logo.svg" width="35" height="35" alt="Логотип звезда">
+          <p class="logo__text">Ink. House</p>
+        </a>
+        <button class="nav__toggle button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#reproductions">Репродукции</a>
@@ -36,7 +37,7 @@
           <li class="nav__item">
             <a class="nav__link" href="#team">О нас</a>
           </li>
-          <li class="nav__item">
+          <li class="nav__item nav__item--mobile">
             <button class="nav__btn button" type="button">
               <span class="visually-hidden">Открыть корзину</span>
             </button>
@@ -46,7 +47,7 @@
     </div>
   </header>
   <main class="page__main">
-    <section class="hero" data-test="hero">
+    <section class="hero">
       <div class="hero__container container">
         <picture class="hero__img-box">
           <source media="(max-width: 576px)" width="195" height="239" type="image/webp"
