@@ -1,9 +1,9 @@
 /* Error: Undefined mixin.
  *    ,
- * 11 |   @include link-basic;
+ * 13 |   @include link-basic;
  *    |   ^^^^^^^^^^^^^^^^^^^
  *    '
- *   styles/blocks/nav.scss 11:3  root stylesheet */
+ *   styles/blocks/nav.scss 13:3  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a    \2577 \a 11 \2502    @include link-basic;\a    \2502    ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   styles/blocks/nav.scss 11:3  root stylesheet";
+  content: "Error: Undefined mixin.\a    \2577 \a 13 \2502    @include link-basic;\a    \2502    ^^^^^^^^^^^^^^^^^^^\a    \2575 \a   styles/blocks/nav.scss 13:3  root stylesheet";
 }

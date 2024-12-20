@@ -1,3 +1,9 @@
-.header {}
-
-.header__container {}
+.header__container {
+  padding: 33px 165px;
+  background-color: $bg-card;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

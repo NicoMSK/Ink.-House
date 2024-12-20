@@ -1,0 +1,15 @@
+.logo {
+  @include link-basic;
+
+  width: 143px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo__text {
+  margin: 0;
+  font-family: $second-font;
+  font-size: 20px;
+  color: $btn-hover;
+  text-transform: capitalize;
+}

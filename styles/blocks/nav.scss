@@ -1,12 +1,14 @@
-.nav {
-}
-
 .nav__list {
+  width: 475px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .nav__item {
 }
-
 .nav__link {
   @include link-basic;
 }
