@@ -117,6 +117,19 @@
 
 .nav__link {
   @include link-basic;
+
+  font-size: 20px;
+
+  &:hover {
+    color: $btn-hover;
+  }
+  &:focus-visible {
+    background-color: $btn-focus;
+    outline: none;
+  }
+  &:active {
+    color: $btn-active;
+  }
 }
 
 .nav__btn {

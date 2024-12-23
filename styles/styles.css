@@ -273,6 +273,17 @@ ol {
   line-height: 20px;
   color: #2c2d35;
   text-decoration: none;
+  font-size: 20px;
+}
+.nav__link:hover {
+  color: #598d66;
+}
+.nav__link:focus-visible {
+  background-color: #d4e8d9;
+  outline: none;
+}
+.nav__link:active {
+  color: #376b44;
 }
 
 .nav__btn {
@@ -304,6 +315,64 @@ ol {
   font-size: 20px;
   color: #598d66;
   text-transform: capitalize;
+}
+
+.hero__container {
+  display: grid;
+  grid-template-columns: 540px auto;
+  column-gap: 30px;
+}
+
+.hero__wrapper {
+  margin-top: 145px;
+}
+
+.hero__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #2c2d35;
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 66px;
+}
+
+.hero__title-color {
+  color: #598d66;
+}
+
+.hero__description {
+  margin: 0;
+  margin-bottom: 60px;
+  color: #86928b;
+}
+
+.hero__link {
+  display: block;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2c2d35;
+  text-decoration: none;
+  padding: 20px 60px;
+  width: 227px;
+  color: #598d66;
+  border: 1px solid #598d66;
+}
+.hero__link:hover {
+  color: #ffffff;
+  background-color: #598d66;
+}
+.hero__link:focus-visible {
+  background-color: #d4e8d9;
+  outline: none;
+}
+.hero__link:active {
+  color: #ffffff;
+  background-color: #376b44;
 }
 
 .social {

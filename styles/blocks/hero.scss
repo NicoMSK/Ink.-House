@@ -1,1 +1,52 @@
-.hero__container {}
+$text-description: #86928b;
+
+.hero__container {
+  display: grid;
+  grid-template-columns: 540px auto;
+  column-gap: 30px;
+}
+
+.hero__wrapper {
+  margin-top: 145px;
+}
+
+.hero__title {
+  @include title-basic;
+
+  margin-bottom: 20px;
+  font-size: 60px;
+  line-height: 66px;
+}
+
+.hero__title-color {
+  color: $btn-hover;
+}
+
+.hero__description {
+  margin: 0;
+  margin-bottom: 60px;
+  color: $text-description;
+}
+
+.hero__link {
+  @include link-basic;
+
+  padding: 20px 60px;
+  width: 227px;
+  color: $btn-hover;
+  border: 1px solid $btn-hover;
+
+  &:hover {
+    color: $main-light;
+    background-color: $btn-hover;
+  }
+
+  &:focus-visible {
+    background-color: $btn-focus;
+    outline: none;
+  }
+  &:active {
+    color: $main-light;
+    background-color: $btn-active;
+  }
+}
