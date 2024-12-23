@@ -2,12 +2,16 @@ $text-description: #86928b;
 
 .hero__container {
   display: grid;
-  grid-template-columns: 540px auto;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
 }
 
 .hero__wrapper {
   margin-top: 145px;
+
+  @media (max-width: $tablet-width-690) {
+    margin-top: 35px;
+  }
 }
 
 .hero__title {
@@ -16,6 +20,11 @@ $text-description: #86928b;
   margin-bottom: 20px;
   font-size: 60px;
   line-height: 66px;
+
+  @media (max-width: $tablet-width-690) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .hero__title-color {
@@ -26,6 +35,10 @@ $text-description: #86928b;
   margin: 0;
   margin-bottom: 60px;
   color: $text-description;
+
+  @media (max-width: $tablet-width-690) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__link {

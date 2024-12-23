@@ -319,12 +319,17 @@ ol {
 
 .hero__container {
   display: grid;
-  grid-template-columns: 540px auto;
+  grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
 }
 
 .hero__wrapper {
   margin-top: 145px;
+}
+@media (max-width: 1100px) {
+  .hero__wrapper {
+    margin-top: 35px;
+  }
 }
 
 .hero__title {
@@ -339,6 +344,12 @@ ol {
   font-size: 60px;
   line-height: 66px;
 }
+@media (max-width: 1100px) {
+  .hero__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
 
 .hero__title-color {
   color: #598d66;
@@ -348,6 +359,11 @@ ol {
   margin: 0;
   margin-bottom: 60px;
   color: #86928b;
+}
+@media (max-width: 1100px) {
+  .hero__description {
+    margin-bottom: 40px;
+  }
 }
 
 .hero__link {
