@@ -1,9 +1,9 @@
 /* Error: Undefined variable.
- *    ,
- * 12 |   @media (max-width: $tablet-width-690) {
- *    |                      ^^^^^^^^^^^^^^^^^
- *    '
- *   styles/blocks/hero.scss 12:22  root stylesheet */
+ *   ,
+ * 9 |   @media (max-width: $tablet-width-510) {
+ *   |                      ^^^^^^^^^^^^^^^^^
+ *   '
+ *   styles/blocks/hero.scss 9:22  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 12 \2502    @media (max-width: $tablet-width-690) {\a    \2502                       ^^^^^^^^^^^^^^^^^\a    \2575 \a   styles/blocks/hero.scss 12:22  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 9 \2502    @media (max-width: $tablet-width-510) {\a   \2502                       ^^^^^^^^^^^^^^^^^\a   \2575 \a   styles/blocks/hero.scss 9:22  root stylesheet";
 }

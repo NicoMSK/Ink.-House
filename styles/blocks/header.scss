@@ -1,6 +1,8 @@
-.header__container {
+.header {
   background-color: $bg-card;
+}
 
+.header__container {
   @media (max-width: $mobile-width) {
     padding: 17px 0;
     background-image: linear-gradient($main-light 50%, $bg-card 50%);
