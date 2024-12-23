@@ -11,8 +11,17 @@ $text-description: #86928b;
     margin-bottom: 50px;
     grid-template-columns: 195px auto;
   }
+  @media (max-width: $mobile-width) {
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
-
+.hero__image {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
 .hero__wrapper {
   margin-top: 145px;
 
@@ -40,6 +49,11 @@ $text-description: #86928b;
     font-size: 36px;
     line-height: 36px;
   }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .hero__title-color {
@@ -58,6 +72,11 @@ $text-description: #86928b;
     margin-bottom: 11px;
     font-size: 16px;
     line-height: 24px;
+  }
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -90,5 +109,9 @@ $text-description: #86928b;
   @media (max-width: $tablet-width-510) {
     padding: 15px 41px;
     width: 178px;
+  }
+  @media (max-width: $mobile-width) {
+    padding: 15px 29px;
+    width: 154px;
   }
 }
