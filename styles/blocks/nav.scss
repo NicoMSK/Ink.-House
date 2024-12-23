@@ -31,16 +31,31 @@
   @media (max-width: $mobile-width) {
     padding: 15px 0 126px 15px;
     position: absolute;
-    top: 105px;
+    top: 110px;
+    left: 0;
     width: 320px;
     z-index: 5;
     background-color: $bg-card;
   }
 }
 
+.nav__wrapper {
+  display: flex;
+  gap: 60px;
+
+  @media (max-width: $tablet-width-510) {
+    align-items: flex-end;
+    border-top: 1px solid #c3d1c6;
+    gap: 124px;
+  }
+  @media (max-width: $mobile-width) {
+    border: none;
+  }
+}
+
 .nav__list {
   position: relative;
-  width: 475px;
+  width: 390px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,12 +63,10 @@
   gap: 15px;
 
   @media (max-width: $tablet-width-690) {
-    width: 450px;
+    width: 362px;
   }
   @media (max-width: $tablet-width-510) {
-    width: 510px;
     padding: 18px 0 0 0;
-    border-top: 1px solid #c3d1c6;
   }
   @media (max-width: $mobile-width) {
     width: 290px;
@@ -63,30 +76,20 @@
     align-items: start;
     gap: 50px;
     background-color: $bg-card;
-    border: none;
   }
 }
 
 .nav--closed .nav__item {
   @media (max-width: $mobile-width) {
     display: none;
-    &--mobile {
-      display: block;
-      position: absolute;
-      top: 3px;
-      right: 0;
-    }
   }
 }
 .nav--opened .nav__item {
   @media (max-width: $mobile-width) {
     display: block;
-
-    &--mobile {
-      display: none;
-    }
   }
 }
+
 .nav--opened .nav__toggle {
   @media (max-width: $mobile-width) {
     width: 18px;
@@ -130,11 +133,31 @@
   &:active {
     color: $btn-active;
   }
+
+  @media (max-width: $tablet-width-690) {
+    font-size: 18px;
+  }
+}
+
+.nav--closed .nav__btn {
+  @media (max-width: $mobile-width) {
+    display: block;
+    position: absolute;
+    top: 67px;
+    right: 15px;
+  }
+}
+
+.nav--opened .nav__btn {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }
 
 .nav__btn {
   @include button-reset;
 
+  display: block;
   width: 24px;
   height: 24px;
   // background-image: url("../../icons/sprite.svg#shopping-cart");

@@ -1,14 +1,17 @@
 .header {
   background-color: $bg-card;
+  @media (max-width: $mobile-width) {
+    background-image: linear-gradient($main-light 50%, $bg-card 50%);
+  }
 }
 
 .header__container {
   @media (max-width: $mobile-width) {
     padding: 17px 0;
-    background-image: linear-gradient($main-light 50%, $bg-card 50%);
     min-height: 130px;
   }
 }
+
 .header__nav {
   padding: 33px 0;
   display: flex;

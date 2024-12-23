@@ -110,11 +110,15 @@ ol {
 .header {
   background-color: #e1ede6;
 }
+@media (max-width: 576px) {
+  .header {
+    background-image: linear-gradient(#ffffff 50%, #e1ede6 50%);
+  }
+}
 
 @media (max-width: 576px) {
   .header__container {
     padding: 17px 0;
-    background-image: linear-gradient(#ffffff 50%, #e1ede6 50%);
     min-height: 130px;
   }
 }
@@ -176,16 +180,34 @@ ol {
   .nav--opened .nav__list {
     padding: 15px 0 126px 15px;
     position: absolute;
-    top: 105px;
+    top: 110px;
+    left: 0;
     width: 320px;
     z-index: 5;
     background-color: #e1ede6;
   }
 }
 
+.nav__wrapper {
+  display: flex;
+  gap: 60px;
+}
+@media (max-width: 768px) {
+  .nav__wrapper {
+    align-items: flex-end;
+    border-top: 1px solid #c3d1c6;
+    gap: 124px;
+  }
+}
+@media (max-width: 576px) {
+  .nav__wrapper {
+    border: none;
+  }
+}
+
 .nav__list {
   position: relative;
-  width: 475px;
+  width: 390px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -194,14 +216,12 @@ ol {
 }
 @media (max-width: 1100px) {
   .nav__list {
-    width: 450px;
+    width: 362px;
   }
 }
 @media (max-width: 768px) {
   .nav__list {
-    width: 510px;
     padding: 18px 0 0 0;
-    border-top: 1px solid #c3d1c6;
   }
 }
 @media (max-width: 576px) {
@@ -213,7 +233,6 @@ ol {
     align-items: start;
     gap: 50px;
     background-color: #e1ede6;
-    border: none;
   }
 }
 
@@ -221,20 +240,11 @@ ol {
   .nav--closed .nav__item {
     display: none;
   }
-  .nav--closed .nav__item--mobile {
-    display: block;
-    position: absolute;
-    top: 3px;
-    right: 0;
-  }
 }
 
 @media (max-width: 576px) {
   .nav--opened .nav__item {
     display: block;
-  }
-  .nav--opened .nav__item--mobile {
-    display: none;
   }
 }
 
@@ -286,12 +296,33 @@ ol {
 .nav__link:active {
   color: #376b44;
 }
+@media (max-width: 1100px) {
+  .nav__link {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav--closed .nav__btn {
+    display: block;
+    position: absolute;
+    top: 67px;
+    right: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav--opened .nav__btn {
+    display: none;
+  }
+}
 
 .nav__btn {
   border: none;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  display: block;
   width: 24px;
   height: 24px;
   background-image: url("../../raw/shopping-cart.svg");
