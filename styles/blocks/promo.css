@@ -1,3 +1,4 @@
+
 /* Error: Undefined variable.
  *    ,
  * 13 |   background-color: $main-dark;
@@ -15,3 +16,8 @@ body::before {
   border-bottom: 2px solid black;
   content: "Error: Undefined variable.\a    \2577 \a 13 \2502    background-color: $main-dark;\a    \2502                      ^^^^^^^^^^\a    \2575 \a   styles/blocks/promo.scss 13:21  root stylesheet";
 }
+
+
+
+/*# sourceMappingURL=promo.css.map */
+
