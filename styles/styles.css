@@ -608,6 +608,11 @@ ol {
     width: 240px;
   }
 }
+@media (max-width: 576px) {
+  .card__item {
+    width: 290px;
+  }
+}
 
 .card__link {
   display: block;
