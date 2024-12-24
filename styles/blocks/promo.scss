@@ -11,11 +11,25 @@ $promo-active: #d9b949;
   );
   background-repeat: no-repeat;
   background-color: $main-dark;
+
+  @media (max-width: $tablet-width-690) {
+    background-image: image-set(
+      url("../../images/tablet-690/promo-background.webp") type("image/webp") 1x,
+      url("../../images/tablet-690/promobackground@2x.webp") type("image/webp")
+        2x,
+      url("../../images/tablet-690/promo-background.jpg") 1x,
+      url("../../images/tablet-690/promobackground@2x.jpg") 2x
+    );
+  }
 }
 
 .promo__wrapper {
   padding: 70px 0;
   width: 540px;
+
+  @media (max-width: $tablet-width-690) {
+    width: 100%;
+  }
 }
 
 .promo__title {
@@ -35,7 +49,21 @@ $promo-active: #d9b949;
     left: 0;
     position: absolute;
     background-image: url("../../images/star.svg");
+    // background-image: url("../../icons/sprite.svg#star");
     background-repeat: no-repeat;
+  }
+
+  @media (max-width: $tablet-width-690) {
+    margin-bottom: 30px;
+    padding-left: 80px;
+    font-size: 30px;
+    line-height: 30px;
+
+    &::before {
+      width: 60px;
+      height: 60px;
+      background-size: 60px 60px;
+    }
   }
 }
 
@@ -43,6 +71,10 @@ $promo-active: #d9b949;
   margin: 0;
   margin-bottom: 60px;
   color: $main-light;
+
+  @media (max-width: $tablet-width-690) {
+    margin-bottom: 30px;
+  }
 }
 
 .promo__link {
@@ -70,5 +102,9 @@ $promo-active: #d9b949;
 
   &:active {
     background-color: $promo-active;
+  }
+
+  @media (max-width: $tablet-width-690) {
+    padding: 18px 36px;
   }
 }
