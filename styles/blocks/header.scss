@@ -1,3 +1,28 @@
-.header {}
+.header {
+  background-color: $bg-card;
+  @media (max-width: $mobile-width) {
+    background-image: linear-gradient($main-light 50%, $bg-card 50%);
+  }
+}
 
-.header__container {}
+.header__container {
+  @media (max-width: $mobile-width) {
+    padding: 17px 0;
+    min-height: 130px;
+  }
+}
+
+.header__nav {
+  padding: 33px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: $tablet-width-510) {
+    padding: 17px 0;
+    flex-direction: column;
+  }
+  @media (max-width: $mobile-width) {
+    padding: 0;
+  }
+}

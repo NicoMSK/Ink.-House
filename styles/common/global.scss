@@ -2,12 +2,19 @@
 *::before,
 *::after {
   box-sizing: border-box;
+
+  // outline: 2px solid red;
 }
 
 img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
 ul,

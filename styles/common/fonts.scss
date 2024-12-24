@@ -1,5 +1,16 @@
-$primary-font: "Lato", "Arial", sans-serif;
-$second-font: "Oswald", "Arial", sans-serif;
+$primary-font: "Raleway", "Arial", sans-serif;
+$second-font: "Raleway-bold", "Arial", sans-serif;
 
-@include font-face("Lato", 400, normal, url("../../fonts/lato/Lato-Regular.woff2") format("woff2"));
-@include font-face("Oswald", 400, normal, url("../../fonts/oswald/oswaldregular.woff2") format("woff2"));
+@include font-face(
+  "Raleway",
+  500,
+  normal,
+  url("../../fonts/Raleway-Medium.woff2") format("woff2")
+);
+
+@include font-face(
+  "Raleway-bold",
+  700,
+  normal,
+  url("../../fonts/Raleway-Bold.woff2") format("woff2")
+);
