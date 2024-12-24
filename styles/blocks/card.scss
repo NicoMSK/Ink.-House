@@ -1,0 +1,71 @@
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card__item {
+  width: 350px;
+  padding: 20px 20px 30px 20px;
+  background-color: $bg-card;
+}
+
+.card__link {
+  @include link-basic;
+}
+
+.card__img-box {
+  margin: 0;
+}
+
+.card__img {
+  margin-bottom: 20px;
+}
+
+.card__img-caption {
+  margin-bottom: 10px;
+  color: $figcaption;
+}
+
+.card__title {
+  @include title-basic;
+
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.card__description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.card__price {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: $btn-hover;
+}
+
+.card__button {
+  @include link-basic;
+
+  padding: 20px 60px;
+  color: $btn-hover;
+  background-color: $bg-card;
+  border: 1px solid $btn-hover;
+
+  &:hover {
+    color: $main-bg;
+    background-color: $btn-hover;
+  }
+
+  &:focus-visible {
+    border: 1px solid $btn-hover;
+    background-color: $btn-focus;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $btn-active;
+  }
+}

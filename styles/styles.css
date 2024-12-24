@@ -561,9 +561,22 @@ ol {
   padding: 10px 20px;
   font-size: 20px;
   border-radius: 20px;
+  border: 2px solid transparent;
   background-color: #d4e8d9;
 }
 .catalog__link-filter--current {
+  color: #f4f6f5;
+  background-color: #376b44;
+}
+.catalog__link-filter:hover {
+  color: #f4f6f5;
+  background-color: #598d66;
+}
+.catalog__link-filter:focus-visible {
+  border: 2px solid #598d66;
+  outline: none;
+}
+.catalog__link-filter:active {
   color: #f4f6f5;
   background-color: #376b44;
 }
@@ -573,9 +586,87 @@ ol {
   }
 }
 
-.catalog__cards-box {
+.card {
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card__item {
+  width: 350px;
+  padding: 20px 20px 30px 20px;
+  background-color: #e1ede6;
+}
+
+.card__link {
+  display: block;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2c2d35;
+  text-decoration: none;
+}
+
+.card__img-box {
+  margin: 0;
+}
+
+.card__img {
+  margin-bottom: 20px;
+}
+
+.card__img-caption {
+  margin-bottom: 10px;
+  color: #86928b;
+}
+
+.card__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #2c2d35;
+  margin-bottom: 8px;
+  font-size: 30px;
+}
+
+.card__description {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.card__price {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #598d66;
+}
+
+.card__button {
+  display: block;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2c2d35;
+  text-decoration: none;
+  padding: 20px 60px;
+  color: #598d66;
+  background-color: #e1ede6;
+  border: 1px solid #598d66;
+}
+.card__button:hover {
+  color: #f4f6f5;
+  background-color: #598d66;
+}
+.card__button:focus-visible {
+  border: 1px solid #598d66;
+  background-color: #d4e8d9;
+  outline: none;
+}
+.card__button:active {
+  background-color: #376b44;
 }
 
 .social {

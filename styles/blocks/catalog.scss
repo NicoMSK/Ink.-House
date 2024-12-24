@@ -48,9 +48,24 @@
   padding: 10px 20px;
   font-size: 20px;
   border-radius: 20px;
+  border: 2px solid transparent;
   background-color: $btn-focus;
 
   &--current {
+    color: $main-bg;
+    background-color: $btn-active;
+  }
+  &:hover {
+    color: $main-bg;
+    background-color: $btn-hover;
+  }
+
+  &:focus-visible {
+    border: 2px solid $btn-hover;
+    outline: none;
+  }
+
+  &:active {
     color: $main-bg;
     background-color: $btn-active;
   }
@@ -58,9 +73,4 @@
   @media (max-width: $tablet-width-510) {
     font-size: 18px;
   }
-}
-
-.catalog__cards-box {
-  display: flex;
-  flex-wrap: wrap;
 }
