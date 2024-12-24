@@ -2,16 +2,49 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+
+  &--germany,
+  &--england {
+    display: none;
+  }
+
+
 }
 
 .card__item {
   width: 350px;
   padding: 20px 20px 30px 20px;
+
+  display: flex;
+  flex-direction: column;
   background-color: $bg-card;
+
+  @media (max-width: $tablet-width-690) {
+    width: 330px;
+  }
+
+  @media (max-width: $tablet-width-510) {
+    width: 240px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+  }
+
+  background-color: $bg-card;
+
 }
 
 .card__link {
   @include link-basic;
+
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+
 }
 
 .card__img-box {
@@ -20,11 +53,24 @@
 
 .card__img {
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width-510) {
+    margin-bottom: 15px;
+  }
+
+
 }
 
 .card__img-caption {
   margin-bottom: 10px;
   color: $figcaption;
+
+
+  @media (max-width: $tablet-width-510) {
+    font-size: 16px;
+  }
+
+
 }
 
 .card__title {
@@ -32,11 +78,26 @@
 
   margin-bottom: 8px;
   font-size: 30px;
+
+
+  @media (max-width: $tablet-width-510) {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+
 }
 
 .card__description {
   margin: 0;
   margin-bottom: 30px;
+
+
+  @media (max-width: $tablet-width-510) {
+    font-size: 16px;
+  }
+
+
 }
 
 .card__price {
@@ -44,6 +105,14 @@
   margin-bottom: 20px;
   font-size: 24px;
   color: $btn-hover;
+
+
+  @media (max-width: $tablet-width-510) {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+
 }
 
 .card__button {
@@ -68,4 +137,11 @@
   &:active {
     background-color: $btn-active;
   }
+
+
+  @media (max-width: $tablet-width-510) {
+    padding: 15px 55px;
+  }
+
+
 }

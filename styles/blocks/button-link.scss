@@ -1,5 +1,5 @@
 .button-link {
-  min-width: 245px;
+  min-width: 200px;
   min-height: 40px;
   display: inline-grid;
   place-items: center;
@@ -7,6 +7,9 @@
   font-family: $primary-font;
   font-size: 16px;
   background-color: $main-bg;
+
+
   text-transform: uppercase;
+
   text-decoration: none;
 }
