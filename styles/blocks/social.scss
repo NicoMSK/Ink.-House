@@ -22,10 +22,3 @@
 .social__link--telegram::before {
   mask-image: url("../../icons/stack.svg#telegram-icon");
 }
-
-.social__link:hover::before,
-:focus-visible::before {
-}
-
-.social__link:active::before {
-}
