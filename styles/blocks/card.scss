@@ -8,6 +8,10 @@
   width: 350px;
   padding: 20px 20px 30px 20px;
   background-color: $bg-card;
+
+  @media (max-width: $tablet-width-690) {
+    width: 330px;
+  }
 }
 
 .card__link {

@@ -78,7 +78,7 @@ ol {
 @media (max-width: 1100px) {
   .container {
     width: 768px;
-    padding: 0 40px;
+    padding: 0 39px;
   }
 }
 @media (max-width: 768px) {
@@ -596,6 +596,11 @@ ol {
   width: 350px;
   padding: 20px 20px 30px 20px;
   background-color: #e1ede6;
+}
+@media (max-width: 1100px) {
+  .card__item {
+    width: 330px;
+  }
 }
 
 .card__link {
