@@ -2,12 +2,27 @@
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+
+  @media (max-width: $tablet-width-510) {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
 }
 
 .catolog__title {
   @include title-basic;
 
   margin-right: 35px;
+
+  @media (max-width: $tablet-width-690) {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  @media (max-width: $tablet-width-510) {
+    font-size: 24px;
+    line-height: 26px;
+  }
 }
 
 .catolog__list-filter {
@@ -15,6 +30,16 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px 32px;
+
+  @media (max-width: $tablet-width-510) {
+    margin-left: 0;
+  }
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 10px 20px;
+    overflow-x: auto;
+  }
 }
 
 .catalog__link-filter {
@@ -29,4 +54,13 @@
     color: $main-bg;
     background-color: $btn-active;
   }
+
+  @media (max-width: $tablet-width-510) {
+    font-size: 18px;
+  }
+}
+
+.catalog__cards-box {
+  display: flex;
+  flex-wrap: wrap;
 }

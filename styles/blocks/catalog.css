@@ -1,9 +1,9 @@
-/* Error: Undefined mixin.
+/* Error: Undefined variable.
  *   ,
- * 8 |   @include title-basic;
- *   |   ^^^^^^^^^^^^^^^^^^^^
+ * 6 |   @media (max-width: $tablet-width-510) {
+ *   |                      ^^^^^^^^^^^^^^^^^
  *   '
- *   styles/blocks/catalog.scss 8:3  root stylesheet */
+ *   styles/blocks/catalog.scss 6:22  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 8 \2502    @include title-basic;\a   \2502    ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   styles/blocks/catalog.scss 8:3  root stylesheet";
+  content: "Error: Undefined variable.\a   \2577 \a 6 \2502    @media (max-width: $tablet-width-510) {\a   \2502                       ^^^^^^^^^^^^^^^^^\a   \2575 \a   styles/blocks/catalog.scss 6:22  root stylesheet";
 }
