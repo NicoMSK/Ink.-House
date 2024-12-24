@@ -1,0 +1,32 @@
+.catalog__box {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.catolog__title {
+  @include title-basic;
+
+  margin-right: 35px;
+}
+
+.catolog__list-filter {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 32px;
+}
+
+.catalog__link-filter {
+  @include link-basic;
+
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: $btn-focus;
+
+  &--current {
+    color: $main-bg;
+    background-color: $btn-active;
+  }
+}

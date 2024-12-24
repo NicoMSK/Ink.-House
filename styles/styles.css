@@ -495,6 +495,47 @@ ol {
   }
 }
 
+.catalog__box {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.catolog__title {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 44px;
+  color: #2c2d35;
+  margin-right: 35px;
+}
+
+.catolog__list-filter {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 32px;
+}
+
+.catalog__link-filter {
+  display: block;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2c2d35;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #d4e8d9;
+}
+.catalog__link-filter--current {
+  color: #f4f6f5;
+  background-color: #376b44;
+}
+
 .social {
   display: flex;
   flex-wrap: wrap;
