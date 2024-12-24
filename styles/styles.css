@@ -740,6 +740,11 @@ ol {
     background-image: linear-gradient(rgba(44, 45, 53, 0.55), rgba(44, 45, 53, 0.55)), image-set(url("../../images/tablet-510/promo-background.webp") type("image/webp") 1x, url("../../images/tablet-510/promo-background@2x.webp") type("image/webp") 2x, url("../../images/tablet-510/promo-background.jpg") 1x, url("../../images/tablet-510/promo-background@2x.jpg") 2x);
   }
 }
+@media (max-width: 576px) {
+  .promo__container {
+    background-image: linear-gradient(rgba(44, 45, 53, 0.55), rgba(44, 45, 53, 0.55)), image-set(url("../../images/mobile/promo-background.webp") type("image/webp") 1x, url("../../images/mobile/promo-background@2x.webp") type("image/webp") 2x, url("../../images/mobile/promo-background.jpg") 1x, url("../../images/mobile/promo-background@2x.jpg") 2x);
+  }
+}
 
 .promo__wrapper {
   padding: 70px 0;
@@ -807,6 +812,12 @@ ol {
     background-size: 50px 50px;
   }
 }
+@media (max-width: 576px) {
+  .promo__title {
+    padding-left: 60px;
+    width: 290px;
+  }
+}
 
 .promo__discription {
   margin: 0;
@@ -823,6 +834,11 @@ ol {
     margin-bottom: 20px;
     font-size: 16px;
     line-height: 22px;
+  }
+}
+@media (max-width: 576px) {
+  .promo__discription {
+    margin-bottom: 30px;
   }
 }
 
@@ -863,6 +879,11 @@ ol {
   .promo__link {
     padding: 14px 33px;
     font-size: 18px;
+  }
+}
+@media (max-width: 576px) {
+  .promo__link {
+    width: 100%;
   }
 }
 
