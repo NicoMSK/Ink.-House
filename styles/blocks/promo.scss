@@ -1,0 +1,74 @@
+$promo-hover: #faeb97;
+$promo-focus: #a38314;
+$promo-active: #d9b949;
+
+.promo__container {
+  background-image: image-set(
+    url("../../images/desktop/promo-background.webp") type("image/webp") 1x,
+    url("../../images/desktop/promo-background@2x.webp") type("image/webp") 2x,
+    url("../../images/desktop/promo-background.jpg") 1x,
+    url("../../images/desktop/promo-background@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-color: $main-dark;
+}
+
+.promo__wrapper {
+  padding: 70px 0;
+  width: 540px;
+}
+
+.promo__title {
+  @include title-basic;
+
+  margin-bottom: 20px;
+  padding-left: 100px;
+  width: 521px;
+  line-height: 40px;
+  position: relative;
+  color: $main-bg;
+
+  &::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    left: 0;
+    position: absolute;
+    background-image: url("../../images/star.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.promo__discription {
+  margin: 0;
+  margin-bottom: 60px;
+  color: $main-light;
+}
+
+.promo__link {
+  @include link-basic;
+
+  padding: 21px 60px;
+  font-size: 20px;
+  min-width: 200px;
+  min-height: 40px;
+  display: inline-grid;
+  place-items: center;
+  text-align: center;
+  background-color: $btn-promo;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: $promo-hover;
+  }
+
+  &:focus-visible {
+    background-color: $promo-hover;
+    border: 1px solid $promo-focus;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $promo-active;
+  }
+}
