@@ -1,26 +1,41 @@
 .team__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
   gap: 30px;
-}
-.team__picture {
-  grid-column: 1/2;
-  grid-row: 1/-1;
+
+  @media (max-width: $tablet-width-690) {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .team__box {
   margin-top: 124px;
+  width: 635px;
+
+  @media (max-width: $tablet-width-690) {
+    margin-top: 0;
+  }
 }
 
 .team__title {
   @include title-basic;
 
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width-690) {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 33px;
+  }
 }
 
 .team__description {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (max-width: $tablet-width-690) {
+    margin-bottom: 30px;
+  }
 }
 
 .team__avatar-box {

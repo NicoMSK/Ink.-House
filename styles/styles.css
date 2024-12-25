@@ -899,18 +899,24 @@ ol {
 }
 
 .team__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, auto);
+  display: flex;
   gap: 30px;
 }
-
-.team__picture {
-  grid-column: 1/2;
-  grid-row: 1/-1;
+@media (max-width: 1100px) {
+  .team__wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .team__box {
   margin-top: 124px;
+  width: 635px;
+}
+@media (max-width: 1100px) {
+  .team__box {
+    margin-top: 0;
+  }
 }
 
 .team__title {
@@ -923,10 +929,22 @@ ol {
   color: #2c2d35;
   margin-bottom: 20px;
 }
+@media (max-width: 1100px) {
+  .team__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+    line-height: 33px;
+  }
+}
 
 .team__description {
   margin: 0;
   margin-bottom: 20px;
+}
+@media (max-width: 1100px) {
+  .team__description {
+    margin-bottom: 30px;
+  }
 }
 
 .team__avatar-box {
