@@ -1,32 +1,17 @@
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px 30px;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 39 |   background-color: $btn-hover;
+ *    |                     ^^^^^^^^^^
+ *    '
+ *   styles/blocks/social.scss 39:21  root stylesheet */
 
-.social__link {
-  position: relative;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
-  width: 24px;
-  height: 24px;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 39 \2502    background-color: $btn-hover;\a    \2502                      ^^^^^^^^^^\a    \2575 \a   styles/blocks/social.scss 39:21  root stylesheet";
 }
-.social__link::before {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-}
-
-.social__link--fb::before {
-  background-image: url("../images/facebook.svg");
-}
-
-.social__link--youtube::before {
-  background-image: url("../images/youtube.svg");
-}
-
-.social__link--instagram::before {
-  background-image: url("../images/instagram.svg");
-}
-
-/*# sourceMappingURL=social.css.map */

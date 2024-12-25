@@ -1048,6 +1048,15 @@ ol {
   text-decoration: none;
   margin-bottom: 8px;
 }
+.footer__phone-link:hover {
+  color: #598d66;
+}
+.footer__phone-link:focus-visible {
+  background-color: #d4e8d9;
+}
+.footer__phone-link:active {
+  color: #376b44;
+}
 @media (max-width: 768px) {
   .footer__phone-link {
     font-size: 20px;
@@ -1108,6 +1117,16 @@ ol {
   text-decoration: none;
   line-height: 27px;
   color: #86928b;
+}
+.footer__nav-link:hover {
+  color: #598d66;
+}
+.footer__nav-link:focus-visible {
+  background-color: #d4e8d9;
+  outline: none;
+}
+.footer__nav-link:active {
+  color: #376b44;
 }
 @media (max-width: 768px) {
   .footer__nav-link {
@@ -1197,6 +1216,11 @@ ol {
 
 .social__link--instagram::before {
   background-image: url("../images/instagram.svg");
+}
+
+.social__link:hover::before,
+:focus-visible::before {
+  background-color: #598d66;
 }
 
 /*# sourceMappingURL=styles.css.map */

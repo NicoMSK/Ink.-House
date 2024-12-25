@@ -36,6 +36,7 @@
 
 .social__link:hover::before,
 :focus-visible::before {
+  background-color: $btn-hover;
 }
 
 .social__link:active::before {
