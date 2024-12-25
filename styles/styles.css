@@ -988,28 +988,113 @@ ol {
   }
 }
 
+.footer {
+  background-color: #e1ede6;
+}
+
+.footer__container {
+  margin-bottom: 0;
+  padding: 23px 165px;
+  display: flex;
+}
+
+.footer__logo-link {
+  margin-bottom: 35px;
+}
+
+.footer__phone-link {
+  display: block;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2c2d35;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+
+.footer__phone-text {
+  margin: 0;
+  color: #86928b;
+}
+
+.footer__nav-box {
+  margin-left: 115px;
+  display: flex;
+  gap: 20px 60px;
+}
+
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.footer__nav-link {
+  display: block;
+  font-family: "Raleway", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2c2d35;
+  text-decoration: none;
+  line-height: 27px;
+  color: #86928b;
+}
+.footer__nav-link--accent {
+  font-size: 20px;
+  color: #2c2d35;
+}
+
+.footer__social-wrapper {
+  margin-left: auto;
+}
+
+.footer__social {
+  margin-bottom: 10px;
+}
+
+.footer__copyright-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #86928b;
+}
+.footer__copyright-text--second {
+  margin-top: 6px;
+}
+
 .social {
+  outline: 2px solid red;
   display: flex;
   flex-wrap: wrap;
+  gap: 15px 30px;
+}
+
+.social__item {
+  outline: 1px solid violet;
 }
 
 .social__link {
+  outline: 1px solid salmon;
+  position: relative;
   display: block;
+  width: 24px;
+  height: 24px;
 }
 .social__link::before {
   content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
 }
 
-.social__link--vk::before {
-  mask-image: url("../../icons/stack.svg#vk-icon");
+.social__link--fb::before {
+  background-image: url("../images/facebook.svg");
 }
 
 .social__link--youtube::before {
-  mask-image: url("../../icons/stack.svg#youtube-icon");
+  background-image: url("../images/youtube.svg");
 }
 
-.social__link--telegram::before {
-  mask-image: url("../../icons/stack.svg#telegram-icon");
+.social__link--instagram::before {
+  background-image: url("../images/instagram.svg");
 }
 
 /*# sourceMappingURL=styles.css.map */
