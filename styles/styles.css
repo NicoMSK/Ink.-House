@@ -929,6 +929,11 @@ ol {
     width: 510px;
   }
 }
+@media (max-width: 576px) {
+  .team__box {
+    width: 290px;
+  }
+}
 
 .team__title {
   margin: 0;
@@ -976,6 +981,11 @@ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 15px 30px;
+}
+@media (max-width: 576px) {
+  .team__avatar-box {
+    gap: 10px 25px;
+  }
 }
 
 .social {

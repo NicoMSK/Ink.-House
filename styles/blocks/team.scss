@@ -20,8 +20,13 @@
     margin-top: 0;
     width: 690px;
   }
+
   @media (max-width: $tablet-width-510) {
     width: 510px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
   }
 }
 
@@ -62,4 +67,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 15px 30px;
+
+  @media (max-width: $mobile-width) {
+    gap: 10px 25px;
+  }
 }
