@@ -737,23 +737,23 @@ ol {
 }
 
 .promo__container {
-  background-image: image-set(url("../../images/desktop/promo-background.webp") type("image/webp") 1x, url("../../images/desktop/promo-background@2x.webp") type("image/webp") 2x, url("../../images/desktop/promo-background.jpg") 1x, url("../../images/desktop/promo-background@2x.jpg") 2x);
+  background-image: image-set(url("../images/desktop/promo-background.webp") type("image/webp") 1x, url("../images/desktop/promo-background@2x.webp") type("image/webp") 2x, url("../images/desktop/promo-background.jpg") 1x, url("../images/desktop/promo-background@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-color: #2c2d35;
 }
 @media (max-width: 1100px) {
   .promo__container {
-    background-image: image-set(url("../../images/tablet-690/promo-background.webp") type("image/webp") 1x, url("../../images/tablet-690/promobackground@2x.webp") type("image/webp") 2x, url("../../images/tablet-690/promo-background.jpg") 1x, url("../../images/tablet-690/promobackground@2x.jpg") 2x);
+    background-image: image-set(url("../images/tablet-690/promo-background.webp") type("image/webp") 1x, url("../images/tablet-690/promobackground@2x.webp") type("image/webp") 2x, url("../images/tablet-690/promo-background.jpg") 1x, url("../images/tablet-690/promobackground@2x.jpg") 2x);
   }
 }
 @media (max-width: 768px) {
   .promo__container {
-    background-image: linear-gradient(rgba(44, 45, 53, 0.55), rgba(44, 45, 53, 0.55)), image-set(url("../../images/tablet-510/promo-background.webp") type("image/webp") 1x, url("../../images/tablet-510/promo-background@2x.webp") type("image/webp") 2x, url("../../images/tablet-510/promo-background.jpg") 1x, url("../../images/tablet-510/promo-background@2x.jpg") 2x);
+    background-image: linear-gradient(rgba(44, 45, 53, 0.55), rgba(44, 45, 53, 0.55)), image-set(url("../images/tablet-510/promo-background.webp") type("image/webp") 1x, url("../images/tablet-510/promo-background@2x.webp") type("image/webp") 2x, url("../images/tablet-510/promo-background.jpg") 1x, url("../images/tablet-510/promo-background@2x.jpg") 2x);
   }
 }
 @media (max-width: 576px) {
   .promo__container {
-    background-image: linear-gradient(rgba(44, 45, 53, 0.55), rgba(44, 45, 53, 0.55)), image-set(url("../../images/mobile/promo-background.webp") type("image/webp") 1x, url("../../images/mobile/promo-background@2x.webp") type("image/webp") 2x, url("../../images/mobile/promo-background.jpg") 1x, url("../../images/mobile/promo-background@2x.jpg") 2x);
+    background-image: linear-gradient(rgba(44, 45, 53, 0.55), rgba(44, 45, 53, 0.55)), image-set(url("../images/mobile/promo-background.webp") type("image/webp") 1x, url("../images/mobile/promo-background@2x.webp") type("image/webp") 2x, url("../images/mobile/promo-background.jpg") 1x, url("../images/mobile/promo-background@2x.jpg") 2x);
   }
 }
 
@@ -793,7 +793,7 @@ ol {
   height: 80px;
   left: 0;
   position: absolute;
-  background-image: url("../../images/star.svg");
+  background-image: url("../images/star.svg");
   background-repeat: no-repeat;
 }
 @media (max-width: 1100px) {
