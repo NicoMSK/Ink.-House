@@ -1,0 +1,157 @@
+.footer {
+  background-color: $bg-card;
+}
+
+.footer__container {
+  margin-bottom: 0;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  display: flex;
+
+  @media (max-width: $tablet-width-690) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
+}
+
+.footer__logo-box {
+  @media (max-width: $tablet-width-690) {
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    width: auto;
+    flex-direction: column;
+  }
+}
+
+.footer__logo-link {
+  margin-bottom: 35px;
+
+  @media (max-width: $tablet-width-690) {
+    margin-bottom: 17px;
+  }
+
+  @media (max-width: $tablet-width-510) {
+    margin-bottom: 15px;
+  }
+}
+
+.footer__phone-link {
+  @include link-basic;
+
+  margin-bottom: 8px;
+
+  @media (max-width: $tablet-width-510) {
+    font-size: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
+}
+
+.footer__phone-text {
+  margin: 0;
+  color: $figcaption;
+
+  @media (max-width: $tablet-width-510) {
+    font-size: 16px;
+  }
+}
+
+.footer__nav-box {
+  margin-left: 115px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 60px;
+
+  @media (max-width: $tablet-width-690) {
+    margin-left: 0;
+  }
+
+  @media (max-width: $tablet-width-510) {
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+    gap: 30px 100px;
+    border-bottom: 1px solid #c3d1c6;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+    gap: 15px 50px;
+  }
+}
+
+.footer__nav-item:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+.footer__nav-link {
+  @include link-basic;
+
+  line-height: 27px;
+  color: $figcaption;
+
+  @media (max-width: $tablet-width-510) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &--accent {
+    font-size: 20px;
+    color: $main-dark;
+
+    @media (max-width: $mobile-width) {
+      font-size: 16px;
+    }
+  }
+}
+
+.footer__social-wrapper {
+  margin-left: auto;
+
+  @media (max-width: $tablet-width-690) {
+    margin-left: 80px;
+  }
+
+  @media (max-width: $tablet-width-510) {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.footer__social {
+  margin-bottom: 10px;
+}
+
+.footer__copyright {
+  @media (max-width: $tablet-width-510) {
+    display: flex;
+  }
+}
+
+.footer__copyright-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: $figcaption;
+
+  &--second {
+    margin-top: 6px;
+
+    @media (max-width: $tablet-width-510) {
+      margin: 0;
+    }
+  }
+}

@@ -1,25 +1,32 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+  gap: 15px 30px;
 }
 
 .social__link {
+  position: relative;
   display: block;
+  width: 24px;
+  height: 24px;
 }
 .social__link::before {
   content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
 }
 
-.social__link--vk::before {
-  mask-image: url("../../icons/stack.svg#vk-icon");
+.social__link--fb::before {
+  background-image: url("../images/facebook.svg");
 }
 
 .social__link--youtube::before {
-  mask-image: url("../../icons/stack.svg#youtube-icon");
+  background-image: url("../images/youtube.svg");
 }
 
-.social__link--telegram::before {
-  mask-image: url("../../icons/stack.svg#telegram-icon");
+.social__link--instagram::before {
+  background-image: url("../images/instagram.svg");
 }
 
 /*# sourceMappingURL=social.css.map */
