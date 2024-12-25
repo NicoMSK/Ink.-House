@@ -3,8 +3,6 @@
 }
 
 .footer__container {
-  outline: 1px solid red;
-
   margin-bottom: 0;
   padding-top: 23px;
   padding-bottom: 23px;
@@ -13,16 +11,24 @@
   @media (max-width: $tablet-width-690) {
     flex-wrap: wrap;
   }
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+  }
 }
 
 .footer__logo-box {
-  outline: 2px solid tomato;
-
   @media (max-width: $tablet-width-690) {
     margin-bottom: 30px;
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    width: auto;
+    flex-direction: column;
   }
 }
 
@@ -46,6 +52,10 @@
   @media (max-width: $tablet-width-510) {
     font-size: 20px;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+  }
 }
 
 .footer__phone-text {
@@ -58,10 +68,9 @@
 }
 
 .footer__nav-box {
-  outline: 2px solid violet;
-
   margin-left: 115px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px 60px;
 
   @media (max-width: $tablet-width-690) {
@@ -73,6 +82,11 @@
     padding-bottom: 16px;
     gap: 30px 100px;
     border-bottom: 1px solid #c3d1c6;
+  }
+
+  @media (max-width: $mobile-width) {
+    justify-content: center;
+    gap: 15px 50px;
   }
 }
 
@@ -94,12 +108,14 @@
   &--accent {
     font-size: 20px;
     color: $main-dark;
+
+    @media (max-width: $mobile-width) {
+      font-size: 16px;
+    }
   }
 }
 
 .footer__social-wrapper {
-  outline: 1px solid blue;
-
   margin-left: auto;
 
   @media (max-width: $tablet-width-690) {
