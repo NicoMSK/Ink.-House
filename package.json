@@ -25,7 +25,8 @@
     "icons": "svg-sprite-generate -d raw -o icons/sprite.svg",
     "imagemin": "node scripts/imagemin.js",
     "optimize": "node scripts/imageminWebp.js",
-    "stylelint": "stylelint 'styles/**/*.scss'"
+    "stylelint": "stylelint 'styles/**/*.scss'",
+    "elint": "stylelint 'styles/**/*.css'"
   },
   "author": "",
   "license": "ISC",

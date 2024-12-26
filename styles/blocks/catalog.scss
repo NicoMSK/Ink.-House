@@ -19,6 +19,7 @@
     font-size: 30px;
     line-height: 33px;
   }
+
   @media (max-width: $tablet-width-510) {
     font-size: 24px;
     line-height: 26px;
@@ -34,6 +35,7 @@
   @media (max-width: $tablet-width-510) {
     margin-left: 0;
   }
+
   @media (max-width: $mobile-width) {
     width: 100%;
     flex-wrap: nowrap;
@@ -55,6 +57,7 @@
     color: $main-bg;
     background-color: $btn-active;
   }
+
   &:hover {
     color: $main-bg;
     background-color: $btn-hover;
