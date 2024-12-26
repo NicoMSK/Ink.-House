@@ -13,6 +13,8 @@
     "responsive-loader": "^3.1.2",
     "sass": "^1.82.0",
     "sharp": "^0.33.5",
+    "stylelint": "^16.12.0",
+    "stylelint-config-standard": "^36.0.1",
     "svg-sprite-generator": "^0.0.7",
     "svg-sprite-loader": "^6.0.11",
     "svgo": "^3.3.2",
@@ -22,7 +24,8 @@
     "sass-watch": "sass --watch ./styles",
     "icons": "svg-sprite-generate -d raw -o icons/sprite.svg",
     "imagemin": "node scripts/imagemin.js",
-    "optimize": "node scripts/imageminWebp.js"
+    "optimize": "node scripts/imageminWebp.js",
+    "stylelint": "stylelint 'styles/**/*.scss'"
   },
   "author": "",
   "license": "ISC",
