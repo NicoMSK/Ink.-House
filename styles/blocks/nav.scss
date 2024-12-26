@@ -6,14 +6,17 @@
   @media (max-width: $tablet-width-510) {
     margin-bottom: 16px;
   }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 32px;
   }
 }
+
 .nav__toggle {
   @include button-reset;
 
   display: none;
+
   @media (max-width: $mobile-width) {
     position: absolute;
     top: 67px;
@@ -21,7 +24,7 @@
     display: block;
     width: 30px;
     height: 30px;
-    // background-image: url("../../icons/sprite.svg#burger-open");
+    // background-image: url("../../icons/sprite.svg#burger-open");background-image
     background-image: url("../../raw/burger-open.svg");
     z-index: 5;
   }
@@ -48,6 +51,7 @@
     border-top: 1px solid #c3d1c6;
     gap: 124px;
   }
+
   @media (max-width: $mobile-width) {
     border: none;
   }
@@ -65,9 +69,11 @@
   @media (max-width: $tablet-width-690) {
     width: 362px;
   }
+
   @media (max-width: $tablet-width-510) {
-    padding: 18px 0 0 0;
+    padding: 18px 0 0;
   }
+
   @media (max-width: $mobile-width) {
     width: 290px;
     padding: 15px 0;
@@ -84,6 +90,7 @@
     display: none;
   }
 }
+
 .nav--opened .nav__item {
   @media (max-width: $mobile-width) {
     display: block;
@@ -99,6 +106,7 @@
     background-image: url("../../raw/close.svg");
   }
 }
+
 .nav--nojs .nav__toggle {
   @media (max-width: $mobile-width) {
     display: none;
@@ -126,10 +134,12 @@
   &:hover {
     color: $btn-hover;
   }
+
   &:focus-visible {
     background-color: $btn-focus;
     outline: none;
   }
+
   &:active {
     color: $btn-active;
   }
@@ -160,6 +170,6 @@
   display: block;
   width: 24px;
   height: 24px;
-  // background-image: url("../../icons/sprite.svg#shopping-cart");
+  // background-image: url("../../icons/sprite.svg#shopping-cart");background-image
   background-image: url("../../raw/shopping-cart.svg");
 }
