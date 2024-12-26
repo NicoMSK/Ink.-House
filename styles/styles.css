@@ -232,7 +232,7 @@ ol {
 }
 @media (max-width: 768px) {
   .nav__list {
-    padding: 18px 0 0 0;
+    padding: 18px 0 0;
   }
 }
 @media (max-width: 576px) {
@@ -608,10 +608,9 @@ ol {
 
 .card__item {
   width: 350px;
-  padding: 20px 20px 30px 20px;
+  padding: 20px 20px 30px;
   display: flex;
   flex-direction: column;
-  background-color: #e1ede6;
   background-color: #e1ede6;
 }
 @media (max-width: 1100px) {
@@ -732,7 +731,7 @@ ol {
 }
 @media (max-width: 768px) {
   .card__button {
-    padding: 15px 55px;
+    padding: 15px 15px;
   }
 }
 
