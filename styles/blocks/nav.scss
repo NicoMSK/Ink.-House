@@ -22,12 +22,14 @@
     top: 67px;
     left: 15px;
     display: block;
-    width: 30px;
-    height: 30px;
-    // background-image: url("../../icons/sprite.svg#burger-open");background-image
-    background-image: url("../../raw/burger-open.svg");
-    z-index: 5;
   }
+}
+
+.nav--closed .nav__toggle {
+  width: 30px;
+  height: 30px;
+  background-image: url("../../icons/sprite.svg#burger-open");
+  z-index: 5;
 }
 
 .nav--opened .nav__list {
@@ -103,7 +105,7 @@
     height: 18px;
     padding: 15px;
     top: 70px;
-    background-image: url("../../raw/close.svg");
+    background-image: url("../../icons/sprite.svg#close");
   }
 }
 
@@ -165,11 +167,45 @@
 }
 
 .nav__btn {
-  @include button-reset;
+  @include link-basic;
 
   display: block;
   width: 24px;
   height: 24px;
-  // background-image: url("../../icons/sprite.svg#shopping-cart");background-image
-  background-image: url("../../raw/shopping-cart.svg");
+  position: relative;
+
+  &:hover {
+    color: $btn-hover;
+  }
+
+  &:focus-visible {
+    color: $btn-hover;
+    background-color: $btn-focus;
+    outline: none;
+  }
+
+  &:active {
+    color: $btn-active;
+  }
+}
+
+.nav__btn-number {
+  padding: 2px;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $second-font;
+  font-size: 10px;
+  color: $main-light;
+  background-color: $btn-hover;
+  border-radius: 50%;
+
+  &--none {
+    display: none;
+  }
 }
