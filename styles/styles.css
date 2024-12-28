@@ -397,7 +397,7 @@ ol {
 }
 
 .hero__container {
-  margin-bottom: 70px;
+  margin-bottom: 62px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
@@ -508,6 +508,7 @@ ol {
   text-decoration: none;
   padding: 20px 60px;
   width: 227px;
+  font-size: 20px;
   color: #598d66;
   border: 1px solid #598d66;
 }
@@ -582,7 +583,7 @@ ol {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px 32px;
+  gap: 15px 27px;
 }
 @media (max-width: 768px) {
   .catolog__list-filter {

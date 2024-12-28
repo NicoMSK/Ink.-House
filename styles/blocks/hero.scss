@@ -1,7 +1,7 @@
 $text-description: #86928b;
 
 .hero__container {
-  margin-bottom: 70px;
+  margin-bottom: 62px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 30px;
@@ -16,7 +16,6 @@ $text-description: #86928b;
     display: block;
     margin-top: 60px;
     margin-bottom: 60px;
-
   }
 }
 
@@ -94,6 +93,7 @@ $text-description: #86928b;
 
   padding: 20px 60px;
   width: 227px;
+  font-size: 20px;
   color: $btn-hover;
   border: 1px solid $btn-hover;
 
