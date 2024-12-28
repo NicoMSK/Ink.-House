@@ -24,7 +24,7 @@
           <img class="logo__svg" src="./images/logo.svg" width="35" height="35" alt="Логотип звезда">
           <p class="logo__text">Ink. House</p>
         </a>
-        <button class="nav__toggle button" type="button">
+        <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="nav__wrapper">
@@ -39,9 +39,13 @@
               <a class="nav__link" href="#team">О нас</a>
             </li>
           </ul>
-          <button class="nav__btn button" type="button">
+          <a class="nav__btn" href="#">
+            <svg width="24" height="24" aria-hidden="true" focusable="false">
+              <use href="icons/sprite.svg#shopping-cart"></use>
+            </svg>
+            <span class="nav__btn-number nav__btn-number--none">1</span>
             <span class="visually-hidden">Открыть корзину</span>
-          </button>
+          </a>
         </div>
       </nav>
     </div>

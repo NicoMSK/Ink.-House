@@ -5,39 +5,45 @@
 }
 
 .social__link {
-  position: relative;
   display: block;
   width: 24px;
   height: 24px;
+  outline: none;
+
+  &:focus-visible {
+    border-radius: 2px;
+    background-color: $btn-focus;
+  }
 
   &::before {
     content: "";
-    position: absolute;
+    display: block;
     width: 24px;
     height: 24px;
-    // background-color: $main-dark;background-color
+    background-color: $main-dark;
   }
 }
 
 .social__link--fb::before {
-  background-image: url("../images/facebook.svg");
-  // mask-image: url("../icons/sprite.svg#facebook");mask-image
-}
-
-.social__link--youtube::before {
-  background-image: url("../images/youtube.svg");
-  // mask-image: url("../../icons/stack.svg#youtube-icon");mask-image
+  mask-image: url("../icons/sprite.svg#facebook");
 }
 
 .social__link--instagram::before {
-  background-image: url("../images/instagram.svg");
-  // mask-image: url("../../icons/stack.svg#telegram-icon");mask-image
+  mask-image: url("../icons/sprite.svg#instagram");
 }
 
-.social__link:hover::before,
-:focus-visible::before {
+.social__link--youtube::before {
+  mask-image: url("../icons/sprite.svg#youtube");
+}
+
+.social__link:hover::before {
+  background-color: $btn-hover;
+}
+
+.social__link:focus-visible::before {
   background-color: $btn-hover;
 }
 
 .social__link:active::before {
+  background-color: $btn-active;
 }
