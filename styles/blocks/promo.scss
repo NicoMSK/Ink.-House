@@ -9,7 +9,6 @@ $promo-active: #d9b949;
     url("../images/desktop/promo-background.jpg") 1x,
     url("../images/desktop/promo-background@2x.jpg") 2x
   );
-  background-repeat: no-repeat;
   background-color: $main-dark;
 
   @media (max-width: $tablet-width-690) {

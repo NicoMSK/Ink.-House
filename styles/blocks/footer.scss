@@ -81,8 +81,8 @@
 
 .footer__nav-box {
   margin-left: 115px;
+  margin-right: 35px;
   display: flex;
-  flex-wrap: wrap;
   gap: 20px 60px;
 
   @media (max-width: $tablet-width-690) {
@@ -98,6 +98,7 @@
 
   @media (max-width: $mobile-width) {
     justify-content: center;
+    flex-wrap: wrap;
     gap: 15px 50px;
   }
 }
