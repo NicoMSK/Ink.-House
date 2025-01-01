@@ -10,7 +10,7 @@
   }
 }
 
-.catolog__title {
+.catalog__title {
   @include title-basic;
 
   margin-right: 35px;
@@ -26,7 +26,7 @@
   }
 }
 
-.catolog__list-filter {
+.catalog__list-filter {
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
