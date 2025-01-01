@@ -1,21 +1,21 @@
 /* COMMON */
-@import "./common/variables";
-@import "./common/mixin";
-@import "./common/fonts";
-@import "./common/global.scss";
-@import "./common/visually-hidden";
+@import "./common/_variables.scss";
+@import "./common/_mixin.scss";
+@import "./common/_fonts.scss";
+@import "./common/_global.scss";
+@import "./common/_visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/page";
-@import "./blocks/container";
-@import "./blocks/button-link";
-@import "./blocks/header";
-@import "./blocks/nav";
-@import "./blocks/logo";
-@import "./blocks/hero";
-@import "./blocks/catalog";
-@import "./blocks/card";
-@import "./blocks/promo";
-@import "./blocks/team";
-@import "./blocks/footer";
-@import "./blocks/social";
+@import "./blocks/_page.scss";
+@import "./blocks/_container.scss";
+@import "./blocks/_button-link.scss";
+@import "./blocks/_header.scss";
+@import "./blocks/_nav.scss";
+@import "./blocks/_logo.scss";
+@import "./blocks/_hero.scss";
+@import "./blocks/_catalog.scss";
+@import "./blocks/_card.scss";
+@import "./blocks/_promo.scss";
+@import "./blocks/_team.scss";
+@import "./blocks/_footer.scss";
+@import "./blocks/_social.scss";

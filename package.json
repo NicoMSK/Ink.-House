@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
     "concurrently": "^9.1.0",
     "imagemin-cli": "^8.0.0",
     "imagemin-mozjpeg": "^10.0.0",
@@ -13,6 +14,7 @@
     "imagemin-webp": "^8.0.0",
     "lite-server": "^2.6.1",
     "live-server": "^1.2.2",
+    "postcss-cli": "^11.0.0",
     "responsive-loader": "^3.1.2",
     "sass": "^1.82.0",
     "sharp": "^0.33.5",
@@ -31,7 +33,8 @@
     "stylelint": "stylelint 'styles/**/*.scss'",
     "elint": "stylelint 'styles/**/*.css'",
     "start": "concurrently \"sass --watch ./styles\" \"npx live-server\"",
-    "dev": "concurrently \"sass --watch ./styles\" \"lite-server\""
+    "dev": "concurrently \"sass --watch ./styles\" \"lite-server\"",
+    "prefix": "npx postcss styles/**/*.css --use autoprefixer -d ./styles"
   },
   "author": "",
   "license": "ISC",

@@ -5,11 +5,11 @@ $second-font: "Raleway-bold", "Arial", sans-serif;
   "Raleway",
   500,
   normal,
-  url("../../fonts/Raleway-Medium.woff2") format("woff2")
+  url("../fonts/Raleway-Medium.woff2") format("woff2")
 );
 @include font-face(
   "Raleway-bold",
   700,
   normal,
-  url("../../fonts/Raleway-Bold.woff2") format("woff2")
+  url("../fonts/Raleway-Bold.woff2") format("woff2")
 );
