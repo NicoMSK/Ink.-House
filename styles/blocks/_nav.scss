@@ -133,17 +133,19 @@
 
   font-size: 20px;
 
-  &:hover {
-    color: $btn-hover;
-  }
+  @media (hover: hover) {
+    &:hover {
+      color: $btn-hover;
+    }
 
-  &:focus-visible {
-    background-color: $btn-focus;
-    outline: none;
-  }
+    &:focus-visible {
+      background-color: $btn-focus;
+      outline: none;
+    }
 
-  &:active {
-    color: $btn-active;
+    &:active {
+      color: $btn-active;
+    }
   }
 
   @media (max-width: $tablet-width-690) {
@@ -174,18 +176,20 @@
   height: 24px;
   position: relative;
 
-  &:hover {
-    color: $btn-hover;
-  }
+  @media (hover: hover) {
+    &:hover {
+      color: $btn-hover;
+    }
 
-  &:focus-visible {
-    color: $btn-hover;
-    background-color: $btn-focus;
-    outline: none;
-  }
+    &:focus-visible {
+      color: $btn-hover;
+      background-color: $btn-focus;
+      outline: none;
+    }
 
-  &:active {
-    color: $btn-active;
+    &:active {
+      color: $btn-active;
+    }
   }
 }
 

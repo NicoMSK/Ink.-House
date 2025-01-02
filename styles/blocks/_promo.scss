@@ -147,18 +147,20 @@ $promo-active: #d9b949;
   background-color: $btn-promo;
   border: 1px solid transparent;
 
-  &:hover {
-    background-color: $promo-hover;
-  }
+  @media (hover: hover) {
+    &:hover {
+      background-color: $promo-hover;
+    }
 
-  &:focus-visible {
-    background-color: $promo-hover;
-    border: 1px solid $promo-focus;
-    outline: none;
-  }
+    &:focus-visible {
+      background-color: $promo-hover;
+      border: 1px solid $promo-focus;
+      outline: none;
+    }
 
-  &:active {
-    background-color: $promo-active;
+    &:active {
+      background-color: $promo-active;
+    }
   }
 
   @media (max-width: $tablet-width-690) {

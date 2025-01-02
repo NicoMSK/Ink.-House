@@ -49,16 +49,18 @@
 
   margin-bottom: 8px;
 
-  &:hover {
-    color: $btn-hover;
-  }
+  @media (hover: hover) {
+    &:hover {
+      color: $btn-hover;
+    }
 
-  &:focus-visible {
-    background-color: $btn-focus;
-  }
+    &:focus-visible {
+      background-color: $btn-focus;
+    }
 
-  &:active {
-    color: $btn-active;
+    &:active {
+      color: $btn-active;
+    }
   }
 
   @media (max-width: $tablet-width-510) {
