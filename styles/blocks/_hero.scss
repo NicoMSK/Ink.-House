@@ -91,39 +91,41 @@ $text-description: #86928b;
 .hero__link {
   @include link-basic;
 
-  padding: 20px 60px;
+  padding: 20px;
   width: 227px;
   font-size: 20px;
+  text-align: center;
   color: $btn-hover;
   border: 1px solid $btn-hover;
 
-  &:hover {
-    color: $main-light;
-    background-color: $btn-hover;
-  }
+  @media (hover: hover) {
+    &:hover {
+      color: $main-light;
+      background-color: $btn-hover;
+    }
 
-  &:focus-visible {
-    background-color: $btn-focus;
-    outline: none;
-  }
+    &:focus-visible {
+      background-color: $btn-focus;
+      outline: none;
+    }
 
-  &:active {
-    color: $main-light;
-    background-color: $btn-active;
+    &:active {
+      color: $main-light;
+      background-color: $btn-active;
+    }
   }
 
   @media (max-width: $tablet-width-690) {
-    padding: 18px 52px;
+    padding: 18px;
     width: 210px;
   }
 
   @media (max-width: $tablet-width-510) {
-    padding: 15px 41px;
+    padding: 15px;
     width: 178px;
   }
 
   @media (max-width: $mobile-width) {
-    padding: 15px 29px;
     width: 154px;
   }
 }

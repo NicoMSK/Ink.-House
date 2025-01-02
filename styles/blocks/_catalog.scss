@@ -57,20 +57,21 @@
     color: $main-bg;
     background-color: $btn-active;
   }
+  @media (hover: hover) {
+    &:hover {
+      color: $main-bg;
+      background-color: $btn-hover;
+    }
 
-  &:hover {
-    color: $main-bg;
-    background-color: $btn-hover;
-  }
+    &:focus-visible {
+      border: 2px solid $btn-hover;
+      outline: none;
+    }
 
-  &:focus-visible {
-    border: 2px solid $btn-hover;
-    outline: none;
-  }
-
-  &:active {
-    color: $main-bg;
-    background-color: $btn-active;
+    &:active {
+      color: $main-bg;
+      background-color: $btn-active;
+    }
   }
 
   @media (max-width: $tablet-width-510) {

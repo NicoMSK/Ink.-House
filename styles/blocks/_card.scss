@@ -99,19 +99,21 @@
   background-color: $bg-card;
   border: 1px solid $btn-hover;
 
-  &:hover {
-    color: $main-bg;
-    background-color: $btn-hover;
-  }
+  @media (hover: hover) {
+    &:hover {
+      color: $main-bg;
+      background-color: $btn-hover;
+    }
 
-  &:focus-visible {
-    border: 1px solid $btn-hover;
-    background-color: $btn-focus;
-    outline: none;
-  }
+    &:focus-visible {
+      border: 1px solid $btn-hover;
+      background-color: $btn-focus;
+      outline: none;
+    }
 
-  &:active {
-    background-color: $btn-active;
+    &:active {
+      background-color: $btn-active;
+    }
   }
 
   @media (max-width: $tablet-width-510) {
